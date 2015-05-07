@@ -1,0 +1,16 @@
+* C:\Users\core i5\Documents\LTC\Work\1506\ADA4938_test.asc
+XU1 N001 N005 N003 N004 Vcc Vee +OUT -OUT Vocm ADA4938
+V2 Vee 0 -5
+R1 N004 0 27.5
+R2 N003 N002 200
+V1 Vcc 0 5
+V3 N006 0 SINE(0 10 100k)
+R3 N006 N002 50
+R4 0 N002 61.9
+R5 +OUT N001 200
+R6 -OUT N005 200
+R7 +OUT -OUT 1k
+.tran 0.03m
+.lib ADA4938.CIR
+.backanno
+.end
